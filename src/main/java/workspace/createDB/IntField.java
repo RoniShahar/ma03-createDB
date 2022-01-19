@@ -1,6 +1,6 @@
 package workspace.createDB;
 
-public class IntField extends FieldName{
+public class IntField extends CellName{
 
     protected int fieldValue;
 

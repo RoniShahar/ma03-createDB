@@ -2,7 +2,7 @@ package workspace.createDB;
 
 import java.util.Date;
 
-public class DateField {
+public class DateField extends CellName{
 
     protected Date fieldValue;
 
