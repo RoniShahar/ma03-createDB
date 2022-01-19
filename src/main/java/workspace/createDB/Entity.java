@@ -5,17 +5,17 @@ import java.util.Map;
 
 public class Entity <T>{
 
+    protected HashMap<T, Record> entity;
+
     public Entity() {
-        this.records = new HashMap<>();
+        this.entity = new HashMap<>();
     }
 
-    protected Map<T, Record> records;
-
-    public Map<T, Record> getRecords() {
-        return records;
+    public HashMap<T, Record> getEntity() {
+        return entity;
     }
 
-    public void setRecords(Map<T, Record> records) {
-        this.records = records;
+    public void setEntity(HashMap<T, Record> entity) {
+        this.entity = entity;
     }
 }

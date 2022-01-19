@@ -4,6 +4,10 @@ public class FieldName {
 
     protected String fieldName;
 
+    public FieldName(String fieldName) {
+        this.fieldName = fieldName;
+    }
+
     public String getFieldName() {
         return fieldName;
     }

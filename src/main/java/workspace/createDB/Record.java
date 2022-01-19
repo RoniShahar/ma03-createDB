@@ -3,7 +3,7 @@ package workspace.createDB;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cells {
+public class Record {
 
     protected List<StringField> stringCells;
     protected List<IntField> intCells;

@@ -1,16 +1,33 @@
 package workspace.createDB;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class DB {
 
-    List<Entity> dataBase;
+    protected String dbName;
+    protected Map<String, Entity> entities;
 
-    public List<Entity> getDataBase() {
-        return dataBase;
+    public DB(String dbName) {
+        this.dbName = dbName;
+        this.entities = new HashMap<>();
     }
 
-    public void setDataBase(List<Entity> dataBase) {
-        this.dataBase = dataBase;
+    public void setDbName(String dbName) {
+        this.dbName = dbName;
+    }
+
+    public String getDbName() {
+        return dbName;
+    }
+
+    public Map<String, Entity> getEntities() {
+        return entities;
+    }
+
+    public void setEntities(Map<String, Entity> entities) {
+        this.entities = entities;
     }
 }
