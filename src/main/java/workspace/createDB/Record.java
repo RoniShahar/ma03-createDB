@@ -1,5 +1,6 @@
 package workspace.createDB;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Cells {
@@ -8,8 +9,10 @@ public class Cells {
     protected List<IntField> intCells;
     protected List<DateField> dateCells;
 
-    public void setStringCells(List<StringField> stringCells) {
-        this.stringCells = stringCells;
+    public void setStringCells() {
+        this.stringCells = new ArrayList<>();
+        this.intCells = new ArrayList<>();
+        this.dateCells = new ArrayList<>();
     }
 
     public void setIntCells(List<IntField> intCells) {

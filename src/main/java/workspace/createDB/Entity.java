@@ -1,17 +1,21 @@
 package workspace.createDB;
 
-import java.util.List;
+import java.util.HashMap;
 import java.util.Map;
 
-public class Entity {
+public class Entity <T>{
 
-    Map<String, List<Records>> entities;
-
-    public Map<String, List<Records>> getEntities() {
-        return entities;
+    public Entity() {
+        this.records = new HashMap<>();
     }
 
-    public void setEntities(Map<String, List<Records>> entities) {
-        this.entities = entities;
+    protected Map<T, Record> records;
+
+    public Map<T, Record> getRecords() {
+        return records;
+    }
+
+    public void setRecords(Map<T, Record> records) {
+        this.records = records;
     }
 }
