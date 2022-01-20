@@ -1,5 +1,7 @@
 package workspace.createDB;
 
+import workspace.createDB.Record;
+
 import java.util.HashMap;
 import java.util.Map;
 

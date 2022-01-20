@@ -9,11 +9,13 @@ public class Record {
     protected List<IntField> intCells;
     protected List<DateField> dateCells;
 
-    public void setStringCells() {
+    public Record() {
         this.stringCells = new ArrayList<>();
         this.intCells = new ArrayList<>();
         this.dateCells = new ArrayList<>();
     }
+
+    public void setStringCells(List<StringField> stringCells) { this.stringCells = stringCells;}
 
     public void setIntCells(List<IntField> intCells) {
         this.intCells = intCells;

@@ -1,6 +1,8 @@
 package workspace.createDB;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Main {
 
@@ -26,13 +28,12 @@ public class Main {
         recordBuilder.addIntField("house_number", 15);
         dbms.insertRecord("person", "5555", recordBuilder.cells);
 
+        List<String> field = new ArrayList<>();
+        field.add("ID");
+        field.add("last_name");
 
-
-        int x = 5;
-
-
-
-
+        Entity entity = dbms.selectSpecificFields("person", field);
+        entity = dbms.whereFieldBiggerThan(entity, "last_name", "ddd");
 
     }
 }
